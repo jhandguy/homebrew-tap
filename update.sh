@@ -18,14 +18,13 @@ for url in ${new_url}
 do
     base_url="$(echo "${url}" | grep -o "https.*${version_pattern}/")"
     tar="${url//${base_url}/}"
-    old_base_url="${base_url//${new_version}/${old_version}}"
 
-    curl -Lo "${tar}" "${old_base_url}${tar}"
+    curl -sLo "${tar}" "${base_url//${new_version}/${old_version}}${tar}"
     old_sha="$(shasum -a 256 "${tar}")"
     old_sha="${old_sha//  ${tar}/}"
     rm "${tar}"
 
-    curl -Lo "${tar}" "${base_url}${tar}"
+    curl -sLo "${tar}" "${base_url}${tar}"
     new_sha="$(shasum -a 256 "${tar}")"
     new_sha="${new_sha//  ${tar}/}"
     rm "${tar}"
