@@ -12,9 +12,7 @@ formula="$(cat "${file}")"
 echo "${formula//${old_version}/${new_version}}" > "${file}"
 
 url_pattern="https.*\.gz"
-new_url=$(grep "url \"${url_pattern}\"" "${file}" | grep -o "${url_pattern}")
-
-for url in ${new_url}
+for url in $(grep "url \"${url_pattern}\"" "${file}" | grep -o "${url_pattern}")
 do
     base_url="$(echo "${url}" | grep -o "https.*${version_pattern}/")"
     tar="${url//${base_url}/}"
