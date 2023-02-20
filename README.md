@@ -10,14 +10,7 @@ brew tap jhandguy/tap
 
 ## Formulae
 
-- [aws-mfa](https://github.com/jhandguy/aws-mfa)
-
-```shell
-brew install jhandguy/tap/aws-mfa
-```
-
-- [aoss-curl](https://github.com/jhandguy/aoss-curl)
-
-```shell
-brew install jhandguy/tap/aoss-curl
-```
+| Formula                                            | Install Command                       |
+|----------------------------------------------------|---------------------------------------|
+| [aws-mfa](https://github.com/jhandguy/aws-mfa)     | `brew install jhandguy/tap/aws-mfa`   |
+| [aoss-curl](https://github.com/jhandguy/aoss-curl) | `brew install jhandguy/tap/aoss-curl` |
