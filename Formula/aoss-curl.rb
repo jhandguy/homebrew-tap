@@ -1,26 +1,26 @@
 class AossCurl < Formula
     desc "Request to Amazon OpenSearch Service with SigV4 🔏"
     homepage "https://github.com/jhandguy/aoss-curl"
-    version "v0.1.20"
+    version "v0.1.21"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.20/x86_64-apple-darwin.gz"
-        sha256 "3eb87d213bc670f657730a14241a79606f1a4b22468b7c79080510a7c04d2e6c"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.21/x86_64-apple-darwin.gz"
+        sha256 "fe4819daf13b2f3a08218f68d24327448e4edb2096da888ba083dc411d1f5880"
     end
 
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.20/aarch64-apple-darwin.gz"
-        sha256 "43bf14debaa85f943f5478205ea6dc5ad31ecd441adaee0bd131969676d696a3"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.21/aarch64-apple-darwin.gz"
+        sha256 "7c241af4721c944a4bea1711994739297145b5020486d9dd66434ac3829fd2e4"
     end
 
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.20/x86_64-unknown-linux-gnu.gz"
-        sha256 "3f71bde15ea9e601067a4991b08094e85970fcc98b6aaefeca0503f04782bd4f"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.21/x86_64-unknown-linux-gnu.gz"
+        sha256 "2505cd2561bbf73bcfefd2be2e324c04d28ef2191b71551a253ecf43ae62eecc"
     end
 
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.20/aarch64-unknown-linux-gnu.gz"
-        sha256 "14ce91ae1e327a1be390d13296a40a9e5d3f12bb489b18a80a8256c3eb7752ca"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.21/aarch64-unknown-linux-gnu.gz"
+        sha256 "888bbd762c92ca31ea49122f5f9c5c02b5b82122c44bb93d722e13fa33927b97"
     end
 
     def install
@@ -28,6 +28,6 @@ class AossCurl < Formula
     end
 
     test do
-        system "#{bin}/aoss-curl --help"
+        system "#{bin}/aoss-curl --version"
     end
 end
