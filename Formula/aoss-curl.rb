@@ -1,26 +1,26 @@
 class AossCurl < Formula
     desc "Request to Amazon OpenSearch Service with SigV4 🔏"
     homepage "https://github.com/jhandguy/aoss-curl"
-    version "v0.1.25"
+    version "v0.1.26"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.25/x86_64-apple-darwin.gz"
-        sha256 "e98630464f6ab3af0167e9d01e1a06cd28a411fe9b4a78fb03b7bad3c75e9883"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.26/x86_64-apple-darwin.gz"
+        sha256 "bd6710509a03520c603f5e80bdf2ca8d4d9623572a47539f02021927d5c61766"
     end
 
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.25/aarch64-apple-darwin.gz"
-        sha256 "b9d138f81200ec53b20dfb35123cb6805394f29dbcfad68e4b9e862ea2cf324a"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.26/aarch64-apple-darwin.gz"
+        sha256 "d7c43a76af41e7c9828941ac56b1ff42b36facb502df424582a541f86bb78c18"
     end
 
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.25/x86_64-unknown-linux-gnu.gz"
-        sha256 "97587c332ab5ab272163d6ef9e1e429e76ea05308ac470531ca6ec27ebb1662c"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.26/x86_64-unknown-linux-gnu.gz"
+        sha256 "e54a2349e8b97d98bfbf9bbcb67dc89cc7fe77fe9236da36890a6d5fdad65f69"
     end
 
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.25/aarch64-unknown-linux-gnu.gz"
-        sha256 "0798628659ce3e9509b526acc583c24bb6b68cb94659152ce565a7020876a171"
+        url "https://github.com/jhandguy/aoss-curl/releases/download/v0.1.26/aarch64-unknown-linux-gnu.gz"
+        sha256 "c91832a9eabb24346384f8fe73e5b62ae3af234beb0f67664cad986feec8be0d"
     end
 
     def install
