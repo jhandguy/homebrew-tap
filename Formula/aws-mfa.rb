@@ -28,6 +28,6 @@ class AwsMfa < Formula
     end
 
     test do
-        system "#{bin}/aws-mfa --version"
+        assert_match version.to_s, shell_output("#{bin}/aws-mfa --version")
     end
 end
