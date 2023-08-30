@@ -2,6 +2,7 @@ class AwsMfa < Formula
     desc "Authenticate to AWS with MFA 🔐"
     homepage "https://github.com/jhandguy/aws-mfa"
     version "v1.0.0"
+    license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
         url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.0/x86_64-apple-darwin.gz"

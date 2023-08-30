@@ -2,6 +2,7 @@ class AossCurl < Formula
     desc "Request to Amazon OpenSearch Service with SigV4 🔏"
     homepage "https://github.com/jhandguy/aoss-curl"
     version "v1.0.0"
+    license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
         url "https://github.com/jhandguy/aoss-curl/releases/download/v1.0.0/x86_64-apple-darwin.gz"
