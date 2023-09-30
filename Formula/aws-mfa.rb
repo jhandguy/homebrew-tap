@@ -29,6 +29,6 @@ class AwsMfa < Formula
     end
 
     test do
-        assert_match version.to_s, shell_output("#{bin}/aws-mfa --version")
+        assert_match "aws-mfa " + version.to_s.delete_prefix("v"), shell_output("#{bin}/aws-mfa --version")
     end
 end

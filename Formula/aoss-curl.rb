@@ -29,6 +29,6 @@ class AossCurl < Formula
     end
 
     test do
-        assert_match version.to_s, shell_output("#{bin}/aoss-curl --version")
+        assert_match "aoss-curl " + version.to_s.delete_prefix("v"), shell_output("#{bin}/aoss-curl --version")
     end
 end
