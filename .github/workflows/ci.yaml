@@ -32,6 +32,18 @@ jobs:
           - os: macos-latest
             formula: aoss-curl
 
+          - os: ubuntu-latest
+            formula: obsidian-vault
+
+          - os: macos-11
+            formula: obsidian-vault
+
+          - os: macos-latest
+            formula: obsidian-vault
+
+          - os: windows-latest
+            formula: obsidian-vault
+
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
