@@ -19,11 +19,6 @@ class ObsidianVault < Formula
         sha256 "1207993a63b488acfd14f486caa941b38ce134ed367736c114a3f57b500b8089"
     end
 
-    unless OS.linux? || OS.mac?
-        url "https://github.com/jhandguy/obsidian-vault/releases/download/v0.0.2/ov_windows_amd64.tar.gz"
-        sha256 "05bd7d379f6d69bb21517ec061dc37775fac649df69a9dec82f1df501303419f"
-    end
-
     def install
         bin.install "ov"
     end
