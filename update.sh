@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-file="Formula/${1}.rb"
+file="formula/${1}.rb"
 new_version="${2}"
 
 version_pattern="v[0-9]*\.[0-9]*\.[0-9]*"

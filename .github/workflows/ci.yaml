@@ -54,5 +54,5 @@ jobs:
 
       - name: Test ${{ matrix.formula }} formula
         run: |
-          HOMEBREW_NO_AUTO_UPDATE=true brew install --formula --include-test ./Formula/${{ matrix.formula }}.rb
-          brew test ./Formula/${{ matrix.formula }}.rb
+          HOMEBREW_NO_AUTO_UPDATE=true brew install --formula --include-test ./formula/${{ matrix.formula }}.rb
+          brew test ./formula/${{ matrix.formula }}.rb
