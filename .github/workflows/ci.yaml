@@ -17,25 +17,16 @@ jobs:
           - os: ubuntu-latest
             formula: aws-mfa
 
-          - os: macos-11
-            formula: aws-mfa
-
           - os: macos-latest
             formula: aws-mfa
 
           - os: ubuntu-latest
             formula: aoss-curl
 
-          - os: macos-11
-            formula: aoss-curl
-
           - os: macos-latest
             formula: aoss-curl
 
           - os: ubuntu-latest
-            formula: obsidian-vault
-
-          - os: macos-11
             formula: obsidian-vault
 
           - os: macos-latest
