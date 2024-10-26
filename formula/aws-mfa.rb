@@ -1,27 +1,27 @@
 class AwsMfa < Formula
     desc "Authenticate to AWS with MFA 🔐"
     homepage "https://github.com/jhandguy/aws-mfa"
-    version "v1.0.19"
+    version "v1.0.20"
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.19/x86_64-apple-darwin.gz"
-        sha256 "a6d64e9bf5abdb0eb0c94aeac47411ec8b3a244a5aef356e8d8085673a082149"
+        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.20/x86_64-apple-darwin.gz"
+        sha256 "64221557a11d548b7e86fa46ccc616b0a2dd2298019fbb6c166c829ecd9d3e7a"
     end
 
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.19/aarch64-apple-darwin.gz"
-        sha256 "d0c8c971127241e5ae19154efc442f61d291c14c1516e4c83bc739cee848e4ad"
+        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.20/aarch64-apple-darwin.gz"
+        sha256 "656cb1419ed3a8f719c03337f021c98752b7cc8516055a4547f117b8bcb983a8"
     end
 
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.19/x86_64-unknown-linux-gnu.gz"
-        sha256 "09e6f11894a0b3cb36c712b1b0f3856a322ed78b30edef903a39204bbc76325e"
+        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.20/x86_64-unknown-linux-gnu.gz"
+        sha256 "86910b9fcf4a5f810ae998505be5fe68af4a8275bc997f2341c56695ece7e9c1"
     end
 
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.19/aarch64-unknown-linux-gnu.gz"
-        sha256 "a0b98d1c853bab1f704d7f93ed0d24cb96dd813bfbec0d101d66852bb4745065"
+        url "https://github.com/jhandguy/aws-mfa/releases/download/v1.0.20/aarch64-unknown-linux-gnu.gz"
+        sha256 "565d5aa016f0d467fa687806751e51f057be7e207ff271496af9434c3606d813"
     end
 
     def install
