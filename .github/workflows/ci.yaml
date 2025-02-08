@@ -32,6 +32,12 @@ jobs:
           - os: macos-latest
             formula: obsidian-vault
 
+          - os: ubuntu-latest
+            formula: jira-prompt
+
+          - os: macos-latest
+            formula: jira-prompt
+
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
