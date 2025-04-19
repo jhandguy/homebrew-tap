@@ -1,27 +1,27 @@
 class ObsidianVault < Formula
     desc "obsidian-vault is a CLI to backup your Obsidian notes in GitHub using AES-GCM-256 authenticated encryption."
     homepage "https://github.com/jhandguy/obsidian-vault"
-    version "v1.2.4"
+    version "v1.2.5"
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.4/ov_darwin_amd64.tar.gz"
-        sha256 "e6f064da295b81b53ea9f8c6251829bdf8224cbee07ae25a8271dd38a0cac67a"
+        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.5/ov_darwin_amd64.tar.gz"
+        sha256 "faaa4db23b0bbacee8b3e464b182708c16717b73b6a1ccd9d31d072de74417ad"
     end
 
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.4/ov_darwin_arm64.tar.gz"
-        sha256 "9b72076b82f54b2fdca3fc61533953a636f854a0b855d0ae4101f1feb1d31dad"
+        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.5/ov_darwin_arm64.tar.gz"
+        sha256 "5fa48381c146a81825108dd8c1b7f679c194708a7bb3c444668ac82bd707f7da"
     end
 
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.4/ov_linux_amd64.tar.gz"
-        sha256 "861386c58809a2f09b995e829bc2d0559fec52ea5812091016611cbb07b06bb2"
+        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.5/ov_linux_amd64.tar.gz"
+        sha256 "d3ab570005c27f67320b0c7c7f44633d5834954ea298995932ff8f9f366cf9cd"
     end
 
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.4/ov_linux_arm64.tar.gz"
-        sha256 "4945944d6d76f2da3811602ca5105c89039634b783fea2699f1b6e3ab08a8824"
+        url "https://github.com/jhandguy/obsidian-vault/releases/download/v1.2.5/ov_linux_arm64.tar.gz"
+        sha256 "5dbf3eee1e40f42a53c4be915dd454a426359e7e21f479ec7996cb755baec90d"
     end
 
     def install
