@@ -1,27 +1,27 @@
 class JiraPrompt < Formula
     desc "jira-prompt is a CLI to prompt Ollama using data from Jira issues."
     homepage "https://github.com/jhandguy/jira-prompt"
-    version "v1.0.0"
+    version "v1.0.1"
     license "MIT"
 
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.0/jp_darwin_amd64.tar.gz"
-        sha256 "50adbaee766ce4d72a549bcba34cda6c2c570e0229aa7848853864963e2e8e31"
+        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.1/jp_darwin_amd64.tar.gz"
+        sha256 "d57877ef04f5c9493d8398e991fc37bcc0c023598774b20d006cf045d64de60b"
     end
 
     if OS.mac? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.0/jp_darwin_arm64.tar.gz"
-        sha256 "d2e71fe919b0af4ed1a751707223d549628958686706fc52034f114e6bba9fa6"
+        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.1/jp_darwin_arm64.tar.gz"
+        sha256 "83d654a8a592704d039548c3e08567bb1977c5bcc43d77f49c7d4b301c0b2b9b"
     end
 
     if OS.linux? && Hardware::CPU.intel?
-        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.0/jp_linux_amd64.tar.gz"
-        sha256 "7a25549369b3541a953398e8241e5af7511f2396966f49496a34b9f2a55eca4d"
+        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.1/jp_linux_amd64.tar.gz"
+        sha256 "2dac2c1a934c3021fca6c48bd2c6f6b0fbd16e7882c91584f212c46766198b81"
     end
 
     if OS.linux? && Hardware::CPU.arm?
-        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.0/jp_linux_arm64.tar.gz"
-        sha256 "6e2e0b26106396f779ea23114e92ad70657eaa3b80883a2d772c1e3118fd7671"
+        url "https://github.com/jhandguy/jira-prompt/releases/download/v1.0.1/jp_linux_arm64.tar.gz"
+        sha256 "da9b1c642a506ec0ccb1970f6b8d052d007d4d21a1455c8427748052687a8f96"
     end
 
     def install
