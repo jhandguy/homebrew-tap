@@ -48,8 +48,6 @@ jobs:
 
       - name: Test ${{ matrix.formula }} formula
         run: |
-          brew update
-          brew tap jhandguy/homebrew-tap
-          brew tap
+          brew tap jhandguy/tap
           brew install --include-test jhandguy/tap/${{ matrix.formula }}
           brew test jhandguy/tap/${{ matrix.formula }}
