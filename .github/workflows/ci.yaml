@@ -18,6 +18,6 @@ jobs:
 
       - name: Test formulae
         run: |
-          brew tap jhandguy/tap {{ .github.workspace }}
+          brew tap jhandguy/tap ${{ github.workspace }}
           brew install aws-mfa aoss-curl obsidian-vault jira-prompt
           brew test aws-mfa aoss-curl obsidian-vault jira-prompt
