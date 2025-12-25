@@ -48,5 +48,6 @@ jobs:
 
       - name: Test ${{ matrix.formula }} formula
         run: |
-          HOMEBREW_NO_AUTO_UPDATE=true brew install --formula --include-test ./formula/${{ matrix.formula }}.rb
-          brew test ./formula/${{ matrix.formula }}.rb
+          brew tap jhandguy/homebrew-tap ${{ github.workspace }}
+          HOMEBREW_NO_AUTO_UPDATE=true brew install --formula --include-test jhandguy/tap/${{ matrix.formula }}
+          brew test jhandguy/tap/${{ matrix.formula }}
