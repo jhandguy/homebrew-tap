@@ -11,28 +11,13 @@ on:
 jobs:
   test:
     name: Test
-    strategy:
-      matrix:
-        include:
-          - os: macos-latest
-            formula: aws-mfa
-
-          - os: macos-latest
-            formula: aoss-curl
-
-          - os: macos-latest
-            formula: obsidian-vault
-
-          - os: macos-latest
-            formula: jira-prompt
-
-    runs-on: ${{ matrix.os }}
+    runs-on: macos-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Test ${{ matrix.formula }} formula
+      - name: Test formulae
         run: |
           brew tap jhandguy/tap
-          brew install ${{ matrix.formula }}
-          brew test ${{ matrix.formula }}
+          brew install aws-mfa aoss-curl obsidian-vault jira-prompt
+          brew test aws-mfa aoss-curl obsidian-vault jira-prompt
