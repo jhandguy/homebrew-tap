@@ -48,6 +48,5 @@ jobs:
 
       - name: Test ${{ matrix.formula }} formula
         run: |
-          brew tap jhandguy/tap
-          brew install --include-test jhandguy/tap/${{ matrix.formula }}
-          brew test jhandguy/tap/${{ matrix.formula }}
+          brew install --include-test ${{ matrix.formula }}
+          brew test ${{ matrix.formula }}
