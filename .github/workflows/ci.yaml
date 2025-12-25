@@ -43,6 +43,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
       - name: Test ${{ matrix.formula }} formula
         run: |
           brew update
