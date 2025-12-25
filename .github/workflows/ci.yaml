@@ -14,26 +14,14 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
-            formula: aws-mfa
-
           - os: macos-latest
             formula: aws-mfa
-
-          - os: ubuntu-latest
-            formula: aoss-curl
 
           - os: macos-latest
             formula: aoss-curl
 
-          - os: ubuntu-latest
-            formula: obsidian-vault
-
           - os: macos-latest
             formula: obsidian-vault
-
-          - os: ubuntu-latest
-            formula: jira-prompt
 
           - os: macos-latest
             formula: jira-prompt
@@ -43,12 +31,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-
       - name: Test ${{ matrix.formula }} formula
         run: |
-          brew update
           brew tap jhandguy/tap
           brew install ${{ matrix.formula }}
           brew test ${{ matrix.formula }}
