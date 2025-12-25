@@ -51,5 +51,5 @@ jobs:
           brew update
           brew tap jhandguy/homebrew-tap
           brew tap
-          brew install --include-test jhandguy/homebrew-tap/${{ matrix.formula }}
-          brew test jhandguy/homebrew-tap/${{ matrix.formula }}
+          brew install --include-test jhandguy/tap/${{ matrix.formula }}
+          brew test jhandguy/tap/${{ matrix.formula }}
